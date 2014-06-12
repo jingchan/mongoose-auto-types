@@ -1,0 +1,19 @@
+{
+  "name": "mongoose-shortid",
+  "version": "0.0.0",
+  "description": "Mongoose schema plugin to create unique short identifier string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jingchan/mongoose-shortid"
+  },
+  "author": "Jing Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jingchan/mongoose-shortid/issues"
+  },
+  "homepage": "https://github.com/jingchan/mongoose-shortid"
+}
