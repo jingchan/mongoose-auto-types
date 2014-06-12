@@ -23,5 +23,9 @@
   "_id": "mongoose-shortid@0.0.0",
   "_shasum": "a5d2d0e61bc19c425c1a5a6a7a9dd0ffbacd37ff",
   "_resolved": "git://github.com/jingchan/mongoose-shortid#d8a1bd5323647ed5a97a916148cc33886e0cf64b",
-  "_from": "mongoose-shortid@git://github.com/jingchan/mongoose-shortid"
+  "_from": "mongoose-shortid@git://github.com/jingchan/mongoose-shortid",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "mongoose": "^3.8.12"
+  }
 }
