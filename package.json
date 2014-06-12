@@ -4,7 +4,7 @@
   "description": "Mongoose schema plugin to create unique short identifier string",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "_from": "mongoose-shortid@git://github.com/jingchan/mongoose-shortid",
   "devDependencies": {
     "async": "^0.9.0",
+    "chai": "^1.9.1",
     "mongoose": "^3.8.12"
   }
 }
