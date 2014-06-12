@@ -1,6 +1,6 @@
 {
   "name": "mongoose-shortid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Mongoose schema plugin to create unique short identifier string",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,18 @@
     "type": "git",
     "url": "git@github.com:jingchan/mongoose-shortid"
   },
-  "author": "Jing Chan",
+  "author": {
+    "name": "Jing Chan"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jingchan/mongoose-shortid/issues"
   },
-  "homepage": "https://github.com/jingchan/mongoose-shortid"
+  "homepage": "https://github.com/jingchan/mongoose-shortid",
+  "readme": "mongoose-shortid\n================\n\nMongoose schema plugin to create unique short identifier string\n",
+  "readmeFilename": "README.md",
+  "_id": "mongoose-shortid@0.0.0",
+  "_shasum": "a5d2d0e61bc19c425c1a5a6a7a9dd0ffbacd37ff",
+  "_resolved": "git://github.com/jingchan/mongoose-shortid#d8a1bd5323647ed5a97a916148cc33886e0cf64b",
+  "_from": "mongoose-shortid@git://github.com/jingchan/mongoose-shortid"
 }
