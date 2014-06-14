@@ -1,7 +1,7 @@
 {
   "name": "mongoose-shortid",
-  "version": "0.0.1",
-  "description": "Mongoose schema plugin to create unique short identifier string",
+  "version": "0.0.2",
+  "description": "Mongoose schema plugin for useful automatically updating fields",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

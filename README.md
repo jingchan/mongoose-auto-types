@@ -1,7 +1,7 @@
-mongoose-shortid
+mongoose-auto-types
 ================
 
-Mongoose schema plugin to create unique short identifier string
+Mongoose schema plugin to create useful fields with automaticupdating
 
 
 ### TODO:
