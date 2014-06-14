@@ -130,5 +130,74 @@ describe('last_modified', function () {
       expect(testSchema.indexes()).to.be.empty;
       done();
     });
-  }); 
+  });
+
+  describe('fieldName option', function(){
+    var tests;
+    var testRuns = 1;
+    var Test;
+    var testSchema;
+
+    afterEach(function (done) {
+      conn.model('Test').collection.drop(function(){
+        delete conn.models.Test;
+        done();
+      })
+    });
+
+    it('should default to the \'lastModified\' field', function (done) {
+      testSchema = new mongoose.Schema();
+      testSchema.plugin(lastModifiedPlugin);
+      Test = conn.model('Test', testSchema);
+      
+      tests = [];
+      for(var i=0; i<testRuns; i++){
+        tests.push(new Test());
+      }
+
+      async.map(tests, 
+        function(el, cb){
+          el.save(function(err){
+            if(err) throw err;
+            cb(null, el);
+          });
+        }, 
+        function(err, res){
+          should.not.exist(err);
+          for(var i=0; i<res.length; i++){
+            res[i].should.have.property('lastModified');
+          }
+          done();
+        }
+      );
+    });
+
+    it('should be able to use custom fieldName', function (done) {
+      testSchema = new mongoose.Schema();
+      testSchema.plugin(lastModifiedPlugin, {fieldName: 'testFieldName'});
+      Test = conn.model('Test', testSchema);
+      
+      tests = [];
+      for(var i=0; i<testRuns; i++){
+        tests.push(new Test());
+      }
+
+      async.map(tests, 
+        function(el, cb){
+          el.save(function(err){
+            if(err) throw err;
+            cb(null, el);
+          });
+        }, 
+        function(err, res){
+          should.not.exist(err);
+          for(var i=0; i<res.length; i++){
+            res[i].should.not.have.property('lastModified');
+            res[i].should.have.property('testFieldName');
+          }
+          done();
+        }
+      );
+    });
+  });
 })
