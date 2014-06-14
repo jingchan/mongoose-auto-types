@@ -1,5 +1,5 @@
 {
-  "name": "mongoose-shortid",
+  "name": "mongoose-auto-types",
   "version": "0.0.2",
   "description": "Mongoose schema plugin for useful automatically updating fields",
   "main": "index.js",
