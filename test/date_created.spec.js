@@ -18,7 +18,7 @@ describe('date_created', function () {
   });
 
   after(function (done) {
-    conn.db.executeDbCommand({ dropDatabase: 1 }, function () {
+    conn.db.command({ dropDatabase: 1 }, function () {
       conn.close(done);
     });
   });

@@ -25,8 +25,8 @@
   "_resolved": "git://github.com/jingchan/mongoose-shortid#d8a1bd5323647ed5a97a916148cc33886e0cf64b",
   "_from": "mongoose-shortid@git://github.com/jingchan/mongoose-shortid",
   "devDependencies": {
-    "async": "^0.9.0",
-    "chai": "^1.9.1",
-    "mongoose": "^3.8.12"
+    "async": "^2.0.0-rc.2",
+    "chai": "^3.5.0",
+    "mongoose": "^4.4.10"
   }
 }
